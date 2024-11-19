@@ -3,6 +3,9 @@ import Link from "next/link";
 import { FaUserAlt, FaChevronDown, FaSearch, FaTruck, FaShoppingBasket} from "react-icons/fa";
 
 const Header = () => {
+
+
+
     return (
         <header className="w-full">
             {/* Top Header */}
