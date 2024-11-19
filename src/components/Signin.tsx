@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import axios, { AxiosError } from 'axios';
+import { FiAlertCircle } from 'react-icons/fi';
 
 const Signin: React.FC = () => {
     const [email, setEmail] = useState<string>('');
@@ -64,7 +65,10 @@ const Signin: React.FC = () => {
                     </p>
 
                     {error && (
-                        <p className="text-center text-red-500 mb-4">{error}</p>
+                        <div className="flex items-center justify-center text-black p-4 rounded-lg mb-4">
+                            <FiAlertCircle className=" mr-2" size={20} />
+                            <p className="">{error}</p>
+                        </div>
                     )}
 
                     <form onSubmit={handleSignin}>
