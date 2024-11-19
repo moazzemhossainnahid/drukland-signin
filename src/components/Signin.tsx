@@ -38,8 +38,7 @@ const Signin: React.FC = () => {
 
     return (
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center min-h-screen">
-            {/* Background with Text */}
-            <div className="md:w-1/2 w-full bg-white flex items-center justify-center rounded-lg h-full min-h-[90vh]">
+            <div className="md:w-1/2 w-full bg-white hidden md:flex items-center justify-center rounded-lg h-full min-h-[90vh]">
                 <div className="text-center">
                     <h2 className="text-xl text-gray-800">
                         Image or Video <br /> of Our Services
@@ -47,10 +46,8 @@ const Signin: React.FC = () => {
                 </div>
             </div>
 
-            {/* Right Side - Signing Card */}
-            <div className="md:w-1/2 w-full p-20">
+            <div className="md:w-1/2 w-full py-5 md:p-20">
                 <div className="w-full p-5 bg-white rounded-xl shadow-md">
-                    {/* Logo */}
                     <div className="w-40 mx-auto py-7">
                         <Image src="/logo.svg" alt="Logo" width={300} height={16} priority />
                     </div>
@@ -66,14 +63,11 @@ const Signin: React.FC = () => {
                         </a>
                     </p>
 
-                    {/* Error Message */}
                     {error && (
                         <p className="text-center text-red-500 mb-4">{error}</p>
                     )}
 
-                    {/* Input Fields */}
                     <form onSubmit={handleSignin}>
-                        {/* Email Field */}
                         <div className="mb-4 group">
                             <label htmlFor="email" className="block text-gray-500 group-focus-within:text-black text-sm mb-1">
                                 Email Address
@@ -89,7 +83,6 @@ const Signin: React.FC = () => {
                             />
                         </div>
 
-                        {/* Password Field */}
                         <div className="mb-4 group">
                             <label htmlFor="password" className="block text-gray-500 group-focus-within:text-black text-sm mb-1">
                                 Password
@@ -105,7 +98,6 @@ const Signin: React.FC = () => {
                             />
                         </div>
 
-                        {/* Terms & Conditions */}
                         <div className="mb-6">
                             <label className="inline-flex items-center">
                                 <input
@@ -119,7 +111,6 @@ const Signin: React.FC = () => {
                             </label>
                         </div>
 
-                        {/* Log In Button */}
                         <button
                             type="submit"
                             className={`w-full bg-black font-semibold text-white py-2 rounded-lg transition ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-800'
@@ -130,7 +121,6 @@ const Signin: React.FC = () => {
                         </button>
                     </form>
 
-                    {/* Divider and Social Icons */}
                     <div className="my-6">
                         <div className="flex items-center justify-center w-full">
                             <div className="w-full border-t border-gray-300"></div>
