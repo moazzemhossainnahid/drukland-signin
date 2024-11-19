@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaUserAlt, FaChevronDown, FaSearch, FaTruck, FaShoppingBasket} from "react-icons/fa";
+import { FaUserAlt, FaChevronDown, FaSearch, FaTruck, FaShoppingBasket } from "react-icons/fa";
 
 const Header = () => {
 
