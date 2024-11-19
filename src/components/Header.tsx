@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="w-full">
             {/* Top Header */}
-            <div className="bg-gray-100 py-2 text-sm">
+            <div className="py-2 text-sm">
                 <div className="container mx-auto flex justify-end space-x-6 px-4">
                     <Link href="/faq" className="hover:underline flex gap-2 items-center">
                         FAQ

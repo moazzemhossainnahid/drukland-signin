@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className="w-full">
       <Header />
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
-        <div className="container mx-auto max-w-screen-xl px-4">
+      <main className="w-full min-h-screen">
+        <div className="container mx-auto px-4">
           {/* Add your content here */}
           <h1 className="text-2xl font-bold text-center">Welcome to Next.js!</h1>
         </div>

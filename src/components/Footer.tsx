@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
 
 
     return (
-        <footer className="container w-full mx-auto flex flex-col lg:flex-row items-center justify-between p-4 bg-white border-t border-gray-700 text-sm">
+        <footer className="container w-full mx-auto flex flex-col lg:flex-row items-center justify-between p-4 border-t border-gray-700 text-sm">
             {/* Company Info */}
             <div className="text-gray-600 flex flex-col lg:flex-row items-center gap-2 lg:gap-6">
                 <span>All rights reserved © 2024 | Drukland.de</span>
