@@ -12,6 +12,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const clashDisplay = localFont({
+  src: "./fonts/ClashDisplay.woff",
+  variable: "--font-clash-display",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Drukland",
@@ -27,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${clashDisplay.variable} antialiased`}
       >
         {children}
       </body>
